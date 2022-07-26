@@ -103,7 +103,7 @@ def document_fn(fn):
 def document_cls(cls):
     doc_str = inspect.getdoc(cls)
     if doc_str is None:
-        return "", {}
+        return "", {}, ""
     tags = {}
     description_lines = []
     mode = "description"
